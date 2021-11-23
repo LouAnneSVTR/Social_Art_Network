@@ -6,10 +6,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SocialNetwork3515Application {
+public class SocialArtNetworkApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SocialNetwork3515Application.class, args);
+        SpringApplication.run(SocialArtNetworkApplication.class, args);
     }
 
 }
+
+
+
+
+
+
+

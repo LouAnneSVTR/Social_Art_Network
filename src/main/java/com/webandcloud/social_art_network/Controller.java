@@ -1,4 +1,4 @@
-package com.webandcloud.social_network3515;
+package com.webandcloud.social_art_network;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

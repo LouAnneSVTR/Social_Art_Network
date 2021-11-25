@@ -1,4 +1,4 @@
-package com.webandcloud.User;
+/*package com.webandcloud.User;
 
 import com.google.cloud.Date;
 import com.google.cloud.spring.data.datastore.core.mapping.Entity;
@@ -65,3 +65,4 @@ public class User {
     }
 
 }
+*/

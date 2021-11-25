@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tinygram-network",
+  "private_key_id": "cebf5126fac5577a6a4d9a3e71aaf46a4bb2ef1a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC5R2gMa8qJJ0/S\n3RdqenSXpnI4vLiPCn2awS9DoFl0l2O5+uaHznKTG+78aXe4v4zF0FLUadzosTzd\n+HDFxpXESC6VNJHzBPGF5XVnmXyEpHrtEcZJQHjqyA9puEloX/Xqo40ug9ovRsHK\nBGhLcZ2twIpsazqn5ba8uF8RG7z8r6aE6iLP5/+dEfaTYtdzVGnPFzKMMyMxu9nG\nEhejiaLCqXBEBuCdbUX1MftggHxKsEHz/P+t79aE/jA6c+d/Bi0nEXY3XFl2HHPm\nyte6fBsVTNwnDlWsDfKYY7jZi/yCYaYd10CUQNbUy9H9yaX04mtLtLNK8ekFFl+X\nSmXG1DcfAgMBAAECggEAEBu4XPAYL/F2MVqIg845Xx/uU/wlvZtHYqeDa56VeHCw\nZRspD3XwTyrsDbpBBD50cj7+RzpxpYdsnSMm8YL7mBDrKoy4rbITKjV8uMZG5aSu\njU2beYM8oAjxvMV0GGTTar7Px6it/6iSsPTOI9UGb59K9EnO/omXEsmiy5187P5V\novLk90Q2FLMArScbgDBhIWXQZtGGOUhuLTnuJjZuqvs9X3VeqQGMXVxkEO0GNOch\nmgzR1CRGCReNGAiMjyJCuzLjvAehLoZ2O5Mztq24TwHWicCq593E/28/Hgu4eVoT\nQP4qGlBC2ceRb4gYFlwj7x+NNk4iFbIfo68q1z+ngQKBgQD3toCJEizabEP2np+r\ncM9Deo5me8y8bkXJbQP8Uuvi/1YBancoBu8RpBM3y37eSj/DlCDJ9XZCvN9BrT7e\nn9kM4FlJrdMJWiNn/Lm3D93sP5cHo90wMBOz89xceSjI6K2qNuZXJDHgA/sN6uJE\nwF/Bs++Mg/yAaJcMZAD4mw1bnwKBgQC/ejLSDYhYMm0GgFZxhlNmCPsL6QPoKUd3\naKX1Y1sG4AR3/dak6hUJvEPk1ogfS/U+piQHAsLRs06hiAirlS2gWWWqCTtSLx0g\n0d4uAiSt95pWvHPjrR1odIxWkzHl787W6ionsiIYvjX9VPLak4xYtUoTLATqCbvW\nV8F0QEt0gQKBgHoBmqdom0ztnD/g+vW+92bd+ztA6KM6kQbXuenSkbpZVuwVmyDM\n4X1H2etWQGOOIH/c+pVeX+QZEMFRajDOfGJaMcAXbGUjz2KNWI9wsjaFT4cEz5HH\nbDzq9HNbfZoO+FJo/eSXwDT84O+G6/E+6ysFzAviikBYw2Tn8I6CF/8zAoGAJrHP\nK1vIveoS1kmBLpfyqqAN+64vN+9/ncXsI9bcQltrC8SkZ9dWQQ1muwwPniN/gBWb\nGj+Yl0AhF8uh1OrkuY7XWLFc55LV1BgVSj7soqty6SxUTyJg2wcShTxhzRHVPuE7\ne6In+dAWoQdVvI4swpCAU7eFlrY422wIkDGeDgECgYAe3E4ZNXvzAegxYH0ciVaH\n53aKaSl06EeySPUXBUZCpP5rIRFkXSC146k2VP0e+UiYhOow/bPSAKSCfsrdkYNW\nQIo4XsX2kfUWs27M3ObVtMoD2l9DXYYYc3u9PM5QMJmfKRdrrK/Kkxc9/5t8pRc9\nncXfWYo0WOhqSCqs4keC+A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tinygram-network@appspot.gserviceaccount.com",
+  "client_id": "115429315057406527586",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tinygram-network%40appspot.gserviceaccount.com"
+}

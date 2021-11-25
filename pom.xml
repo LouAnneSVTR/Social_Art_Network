@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.webandcloud</groupId>
-    <artifactId>Social_Network3515</artifactId>
+    <artifactId>Social_Art_Network</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Social_Network3515</name>
-    <description>Social_Network3515</description>
+    <name>Social_Art_Network</name>
+    <description>Social_Art_Network</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -66,10 +66,16 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>spring-cloud-gcp-starter-data-datastore</artifactId>
+            <version>2.0.5</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

@@ -1,4 +1,4 @@
-/*package com.webandcloud.User;
+package com.webandcloud.User;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,4 +14,4 @@ public interface UserRepository extends DatastoreRepository<User, Long> {
 
     User findUserByEmail(String email);
 
-}*/
+}

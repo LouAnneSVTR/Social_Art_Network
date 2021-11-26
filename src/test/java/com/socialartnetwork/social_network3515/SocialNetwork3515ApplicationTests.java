@@ -1,4 +1,4 @@
-package com.webandcloud.social_network3515;
+package com.socialartnetwork.social_network3515;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

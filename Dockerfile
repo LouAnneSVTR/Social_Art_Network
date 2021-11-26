@@ -5,5 +5,5 @@ WORKDIR /webandcloud
 RUN mvn clean package -DskipTests
 
 FROM openjdk:16-jdk
-COPY --from=BUILD /app/target/*.jar  application.jar
+COPY --from=BUILD /webandcloud/target/*.jar  application.jar
 ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=dev,datastore", "/application.jar"]

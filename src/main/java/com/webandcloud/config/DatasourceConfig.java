@@ -1,4 +1,4 @@
-package com.webandcloud.config;
+/*package com.webandcloud.config;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
@@ -18,3 +18,4 @@ public class DatasourceConfig {
                 .build();
     }
 }
+*/

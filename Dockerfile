@@ -1,7 +1,7 @@
 FROM maven:3.8.3-openjdk-16 as BUILD
-COPY pom.xml /app/
-COPY src /app/src/
-WORKDIR /app
+COPY pom.xml /webandcloud/
+COPY src /webandcloud/src/
+WORKDIR /webandcloud
 RUN mvn clean package -DskipTests
 
 FROM openjdk:16-jdk

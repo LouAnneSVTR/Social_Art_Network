@@ -1,4 +1,4 @@
-package com.webandcloud.User;
+/*package com.webandcloud.User;
 
 import java.util.List;
 import com.google.cloud.spring.data.datastore.repository.DatastoreRepository;
@@ -12,3 +12,4 @@ public interface UserRepository extends DatastoreRepository<User, Long> {
     List<User> findUserByUserEmail(String email);
 
 }
+*/

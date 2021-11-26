@@ -1,11 +1,12 @@
-/*package com.webandcloud.User;
+package com.webandcloud.User;
 
 import com.google.cloud.Date;
 import com.google.cloud.spring.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
 
-@Entity
+
+@Entity(name = "users")
 public class User {
 
     @Id
@@ -19,8 +20,8 @@ public class User {
 
     private Date dateOfSubcribtion;
 
-    public User(Integer userId, String userFirstName, String userLastName, String userEmail) {
-        this.userId = userId;
+    public User(String userFirstName, String userLastName, String userEmail) {
+
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userEmail = userEmail;
@@ -28,30 +29,6 @@ public class User {
 
     public Integer getUserId() {
         return userId;
-    }
-
-    public String getUserFirstName() {
-        return userFirstName;
-    }
-
-    public void setUserFirstName(String userFirstName) {
-        this.userFirstName = userFirstName;
-    }
-
-    public String getUserLastName() {
-        return userLastName;
-    }
-
-    public void setUserLastName(String userLastName) {
-        this.userLastName = userLastName;
-    }
-
-    public String getUserEmail() {
-        return userEmail;
-    }
-
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
     }
 
     @Override
@@ -65,4 +42,3 @@ public class User {
     }
 
 }
-*/

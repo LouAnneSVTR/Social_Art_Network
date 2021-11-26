@@ -1,4 +1,4 @@
-package com.webandcloud.Friend;
+/*package com.webandcloud.Friend;
 
 import com.webandcloud.User.User;
 import javax.persistence.*;
@@ -13,10 +13,9 @@ public class Friend {
 
     private Date createdDate;
 
-    @Entity
-    User firstUser;
+    private User firstUser;
 
-    User secondUser;
+    private User secondUser;
 
     public Friend() {
     }
@@ -52,4 +51,4 @@ public class Friend {
     public void setSecondUser(User secondUser) {
         this.secondUser = secondUser;
     }
-}
+}*/

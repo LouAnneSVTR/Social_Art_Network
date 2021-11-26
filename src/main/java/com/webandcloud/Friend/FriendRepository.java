@@ -1,4 +1,4 @@
-package com.webandcloud.Friend;
+/*package com.webandcloud.Friend;
 
 import com.google.cloud.spring.data.datastore.repository.DatastoreRepository;
 import com.webandcloud.User.User;
@@ -14,4 +14,4 @@ public interface FriendRepository extends DatastoreRepository<User, Long> {
     List<Friend> findByFirstUser(User user);
     List<Friend> findBySecondUser(User user);
 
-}
+}*/

@@ -1,4 +1,4 @@
-FROM maven:3.5.2-jdk-16-alpine as BUILD
+FROM maven:3.8.3-openjdk-16 as BUILD
 COPY pom.xml /app/
 COPY src /app/src/
 WORKDIR /app

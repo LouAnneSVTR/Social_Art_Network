@@ -4,6 +4,6 @@ COPY src /app/src/
 WORKDIR /app
 RUN mvn clean package -DskipTests
 
-FROM openjdk:16-jre-alpine
+FROM openjdk:16-jdk
 COPY --from=BUILD /app/target/*.jar  application.jar
 ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=dev,datastore", "/application.jar"]

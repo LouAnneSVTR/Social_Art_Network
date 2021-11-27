@@ -1,4 +1,4 @@
-package com.socialartnetwork.config;
+/*package com.socialartnetwork.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,5 +42,5 @@ public class SwaggerConfig {
                 .version("1.0")
                 .contact(new Contact("Nicolas Widart", "https://nicolaswidart.com", "n.widart@gmail.com"))
                 .build();
-    }*/
-}
+    }
+}*/

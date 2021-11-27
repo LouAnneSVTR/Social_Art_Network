@@ -22,7 +22,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>16</java.version>
         <gcp.version>1.2.1.RELEASE</gcp.version>
-        <swagger2>3.0.0-SNAPSHOT</swagger2>
+        <swagger2>3.0.0</swagger2>
 
     </properties>
 
@@ -95,6 +95,26 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger2}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger2}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-data-rest</artifactId>
+            <version>${swagger2}</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <dependencyManagement>
@@ -116,7 +136,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-
         </plugins>
     </build>
 

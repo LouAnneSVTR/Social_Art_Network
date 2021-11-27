@@ -1,4 +1,4 @@
-/*package com.socialartnetwork.config;
+package com.socialartnetwork.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,10 +21,10 @@ import java.time.LocalDate;
 
 @Configuration
 @EnableSwagger2
-@Profile("!tests")
+//@Profile("!tests")
 @Import(SpringDataRestConfiguration.class)
 public class SwaggerConfig {
-    @Bean
+    /*@Bean
     public Docket mainConfig() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select().apis(RequestHandlerSelectors.any())
@@ -42,5 +42,5 @@ public class SwaggerConfig {
                 .version("1.0")
                 .contact(new Contact("Nicolas Widart", "https://nicolaswidart.com", "n.widart@gmail.com"))
                 .build();
-    }*
-}*/
+    }*/
+}

@@ -43,9 +43,15 @@ public class User {
 
 }*/
 
-/*import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity(name = "users")
 public class User {
     @Id
@@ -101,7 +107,4 @@ public class User {
         this.uid = uid;
     }
 
-    public User() {
-    }
 }
-*/

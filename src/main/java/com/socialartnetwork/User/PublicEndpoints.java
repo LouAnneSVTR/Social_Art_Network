@@ -1,4 +1,4 @@
-/*package com.socialartnetwork.User;
+package com.socialartnetwork.User;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,4 +23,3 @@ public class PublicEndpoints {
         return ResponseEntity.ok(allUsers);
     }
 }
-*/

@@ -1,7 +1,8 @@
-/*package com.socialartnetwork.User;
+package com.socialartnetwork.User;
 
 import com.socialartnetwork.User.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 //import springfox.documentation.swagger2.mappers.ModelMapper;
 import org.modelmapper.ModelMapper;
@@ -17,6 +18,7 @@ public class UserService {
 
     @Autowired
     ModelMapper modelMapper;
+
 
     public void saveUser(UserDto userDto) {
         Optional<User> optionalUser = userRepository.findByEmail(userDto.getEmail());
@@ -39,4 +41,3 @@ public class UserService {
         return userRepository.findAll();
     }
 }
-*/

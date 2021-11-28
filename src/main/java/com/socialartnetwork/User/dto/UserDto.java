@@ -1,4 +1,4 @@
-/*package com.socialartnetwork.User.dto;
+package com.socialartnetwork.User.dto;
 
 import java.io.Serializable;
 
@@ -65,4 +65,3 @@ public class UserDto implements Serializable {
         this.picture = picture;
     }
 }
-*/

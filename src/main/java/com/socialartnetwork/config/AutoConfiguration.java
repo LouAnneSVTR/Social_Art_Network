@@ -1,9 +1,11 @@
 package com.socialartnetwork.config;
 
+import com.socialartnetwork.User.PrivateEndpoint;
 import com.socialartnetwork.entity.Book;
 import com.socialartnetwork.entity.Expense;
 import com.socialartnetwork.repository.BookRepository;
 import com.socialartnetwork.repository.ExpensesRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.gcp.autoconfigure.datastore.DatastoreProvider;
@@ -25,6 +27,11 @@ public class AutoConfiguration {
     @Bean
     DatastoreTransactionManager datastoreTransactionManager(DatastoreProvider datastore) {
         return new DatastoreTransactionManager(datastore);
+    }
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
     }
 
 }

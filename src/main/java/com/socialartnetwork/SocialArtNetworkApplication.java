@@ -1,6 +1,7 @@
 package com.socialartnetwork;
 
 
+import com.socialartnetwork.User.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,7 +11,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 @SpringBootApplication
-@EnableSwagger2
 public class SocialArtNetworkApplication {
 
 
@@ -19,10 +19,7 @@ public class SocialArtNetworkApplication {
         SpringApplication.run(SocialArtNetworkApplication.class, args);
     }
 
-    @Bean
-    public ModelMapper modelMapper() {
-        return new ModelMapper();
-    }
+
 
 
 

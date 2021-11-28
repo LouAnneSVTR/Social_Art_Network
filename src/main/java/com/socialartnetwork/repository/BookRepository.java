@@ -1,4 +1,4 @@
-package com.socialartnetwork.repository;
+/*package com.socialartnetwork.repository;
 
 import java.util.List;
 
@@ -15,4 +15,4 @@ public interface BookRepository extends DatastoreRepository<Book, String> {
     List<Book> findByYearGreaterThan(int year);
 
     List<Book> findByAuthorAndYear(String author, int year);
-}
+}*/

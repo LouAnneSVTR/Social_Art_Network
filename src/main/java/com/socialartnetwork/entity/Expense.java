@@ -1,4 +1,4 @@
-package com.socialartnetwork.entity;
+/*package com.socialartnetwork.entity;
 
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
@@ -25,4 +25,4 @@ public class Expense {
     double priceperitem;
 
     double amount;
-}
+}*/

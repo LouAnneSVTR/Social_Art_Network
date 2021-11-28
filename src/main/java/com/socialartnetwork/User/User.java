@@ -1,7 +1,7 @@
-/*package com.webandcloud.User;
+package com.socialartnetwork.User;
 
-import com.google.cloud.Date;
-import com.google.cloud.spring.data.datastore.core.mapping.Entity;
+/*import com.google.cloud.Date;
+import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
 
@@ -41,5 +41,66 @@ public class User {
                 '}';
     }
 
+}*/
+
+import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
+import org.springframework.data.annotation.Id;
+
+@Entity(name = "users")
+public class User {
+    @Id
+    private Integer id;
+
+    private String uid;
+
+    private String name;
+
+    private String email;
+
+    private String picture;
+
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String firstName) {
+        this.name = firstName;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    public User() {
+    }
 }
-*/

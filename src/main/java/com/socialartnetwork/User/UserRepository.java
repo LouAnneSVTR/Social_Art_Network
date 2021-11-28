@@ -1,15 +1,18 @@
-/*package com.webandcloud.User;
+package com.socialartnetwork.User;
 
 import java.util.List;
-import com.google.cloud.spring.data.datastore.repository.DatastoreRepository;
+import java.util.Optional;
+
+import org.springframework.cloud.gcp.data.datastore.repository.DatastoreRepository;
 
 public interface UserRepository extends DatastoreRepository<User, Long> {
 
-    List<User> findUserByFirstName(String firstName);
+    List<User> findAll();
 
-    List<User> findUserByLastName(String lastName);
+    Optional<User> findByEmail(String email);
 
-    List<User> findUserByUserEmail(String email);
+    List<User> findUserById(Integer id);
+
+    List<User> findUserByEmail(String email);
 
 }
-*/

@@ -1,4 +1,4 @@
-package com.socialartnetwork.resource;
+/*package com.socialartnetwork.resource;
 
 import java.util.logging.Logger;
 
@@ -9,11 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author a73s
- *
- */
 @RestController
 public class DataStoreController {
 
@@ -30,4 +25,4 @@ public class DataStoreController {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package com.socialartnetwork.repository;
+/*package com.socialartnetwork.repository;
 
 import com.socialartnetwork.entity.Expense;
 import org.springframework.cloud.gcp.data.datastore.repository.DatastoreRepository;
@@ -18,3 +18,4 @@ public interface ExpensesRepository extends DatastoreRepository<Expense, String>
     Slice<Expense> findExpenseByPartnumber(@Param("name") String name, Pageable pageable);
 
 }
+*/

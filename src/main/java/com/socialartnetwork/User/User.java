@@ -43,7 +43,7 @@ public class User {
 
 }*/
 
-import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
+/*import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
 @Entity(name = "users")
@@ -104,3 +104,4 @@ public class User {
     public User() {
     }
 }
+*/

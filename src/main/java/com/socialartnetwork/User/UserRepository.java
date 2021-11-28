@@ -1,4 +1,4 @@
-package com.socialartnetwork.User;
+/*package com.socialartnetwork.User;
 
 import java.util.List;
 import java.util.Optional;
@@ -16,3 +16,4 @@ public interface UserRepository extends DatastoreRepository<User, Long> {
     List<User> findUserByEmail(String email);
 
 }
+*/

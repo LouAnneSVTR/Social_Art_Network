@@ -1,4 +1,4 @@
-/*package com.socialartnetwork.config;
+package com.socialartnetwork.config;
 
 import com.socialartnetwork.entity.Book;
 import com.socialartnetwork.entity.Expense;
@@ -27,4 +27,4 @@ public class AutoConfiguration {
         return new DatastoreTransactionManager(datastore);
     }
 
-}*/
+}

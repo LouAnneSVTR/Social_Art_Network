@@ -1,12 +1,10 @@
-package com.socialartnetwork.User.dto;
+/*package com.socialartnetwork.User.dto;
 
 import java.io.Serializable;
 
 public class UserDto implements Serializable {
 
-    /**
-     *
-     */
+
     private static final long serialVersionUID = 4408418647685225829L;
     private String uid;
     private String name;
@@ -67,3 +65,4 @@ public class UserDto implements Serializable {
         this.picture = picture;
     }
 }
+*/

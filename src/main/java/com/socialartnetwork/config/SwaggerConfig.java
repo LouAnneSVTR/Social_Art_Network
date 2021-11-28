@@ -20,7 +20,7 @@ import java.time.LocalDate;
 @EnableSwagger2
 public class SwaggerConfig implements WebMvcConfigurer {
 
-    @Override
+    /*@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
         registry
@@ -30,5 +30,5 @@ public class SwaggerConfig implements WebMvcConfigurer {
         registry
                 .addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }
+    }*/
 }

@@ -1,6 +1,8 @@
 package com.socialartnetwork.config;
 
-import com.socialartnetwork.User.PrivateEndpoint;
+//import com.socialartnetwork.User.PrivateEndpoint;
+import com.socialartnetwork.User.User;
+import com.socialartnetwork.User.UserRepository;
 import com.socialartnetwork.entity.Book;
 import com.socialartnetwork.entity.Expense;
 import com.socialartnetwork.repository.BookRepository;
@@ -17,11 +19,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EntityScan(basePackageClasses = { Expense.class, Book.class })
+@EntityScan(basePackageClasses = { User.class})
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableDatastoreAuditing
-@EnableDatastoreRepositories(basePackageClasses = { ExpensesRepository.class, BookRepository.class })
+@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class})
 public class AutoConfiguration {
 
     @Bean

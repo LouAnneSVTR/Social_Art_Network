@@ -1,47 +1,27 @@
 package com.socialartnetwork.User;
 
-/*import com.google.cloud.Date;
+/*import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
-
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity(name = "users")
 public class User {
-
     @Id
-    private Integer userId;
+    Long id;
 
-    private String userFirstName;
+    String uid;
 
-    private String userLastName;
+    String name;
 
-    private String userEmail;
-
-    private Date dateOfSubcribtion;
-
-    public User(String userFirstName, String userLastName, String userEmail) {
-
-        this.userFirstName = userFirstName;
-        this.userLastName = userLastName;
-        this.userEmail = userEmail;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + this.userId +
-                ", first name='" + this.userFirstName + '\'' +
-                ", last name ='" + this.userLastName + '\'' +
-                ", email=" + this.userEmail +
-                '}';
-    }
+    String email;
 
 }*/
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -55,7 +35,7 @@ import org.springframework.data.annotation.Id;
 @Entity(name = "users")
 public class User {
     @Id
-    private Integer id;
+    private Long id;
 
     private String uid;
 
@@ -66,11 +46,11 @@ public class User {
     private String picture;
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

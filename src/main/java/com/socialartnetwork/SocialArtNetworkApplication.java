@@ -1,7 +1,7 @@
 package com.socialartnetwork;
 
 
-import com.socialartnetwork.User.UserRepository;
+//import com.socialartnetwork.User.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

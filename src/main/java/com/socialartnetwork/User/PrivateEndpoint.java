@@ -1,4 +1,4 @@
-package com.socialartnetwork.User;
+/*package com.socialartnetwork.User;
 
 import com.socialartnetwork.User.dto.UserDto;
 import org.modelmapper.ModelMapper;
@@ -42,3 +42,5 @@ public class PrivateEndpoint {
         return ResponseEntity.ok(userDto);
     }
 }
+
+ */

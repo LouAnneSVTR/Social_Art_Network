@@ -12,3 +12,8 @@ docker push gcr.io/social-art-network/elastic
 
 Swagger
 http://<URL>/swagger-ui/
+
+Front
+sudo npm -g install @vue/cli //onstaller vue cli
+vue create social-art_network-web //créer projet vue
+npm run serve //run server vue

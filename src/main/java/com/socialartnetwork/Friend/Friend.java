@@ -16,7 +16,7 @@ import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 public class Friend {
 
     @Id
-    private Integer id;
+    private Long id;
 
     private Date createdDate;
 
@@ -24,11 +24,11 @@ public class Friend {
 
     private Long idSecondUser;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

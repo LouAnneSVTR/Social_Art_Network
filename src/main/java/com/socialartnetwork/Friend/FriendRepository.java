@@ -10,9 +10,10 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "friends", path = "friend")
 public interface FriendRepository extends DatastoreRepository<Friend, Long> {
 
-    boolean existsByFirstUserAndSecondUser(User firstUser,User secondUser);
+    boolean existsByFirstUserAndSecondUser(Long firstUser,Long secondUser);
 
-    List<Friend> findByFirstUser(User user);
-    List<Friend> findBySecondUser(User user);
+    List<Friend> findFriendByIdFirstUser(Long user);
+
+    List<Friend> findFriendByIdSecondUser(Long user);
 
 }

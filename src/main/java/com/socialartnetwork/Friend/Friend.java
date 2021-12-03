@@ -1,7 +1,7 @@
 package com.socialartnetwork.Friend;
 
 import java.util.Date;
-import com.socialartnetwork.User.User;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,9 +20,9 @@ public class Friend {
 
     private Date createdDate;
 
-    private User firstUser;
+    private Long idFirstUser;
 
-    private User secondUser;
+    private Long idSecondUser;
 
     public Integer getId() {
         return id;
@@ -40,19 +40,19 @@ public class Friend {
         this.createdDate = createdDate;
     }
 
-    public User getFirstUser() {
-        return firstUser;
+    public Long getFirstUser() {
+        return this.idFirstUser;
     }
 
-    public void setFirstUser(User firstUser) {
-        this.firstUser = firstUser;
+    public void setFirstUser(Long firstUser) {
+        this.idFirstUser = firstUser;
     }
 
-    public User getSecondUser() {
-        return secondUser;
+    public Long getSecondUser() {
+        return this.idSecondUser;
     }
 
-    public void setSecondUser(User secondUser) {
-        this.secondUser = secondUser;
+    public void setSecondUser(Long secondUser) {
+        this.idSecondUser = secondUser;
     }
 }

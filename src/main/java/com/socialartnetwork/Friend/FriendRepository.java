@@ -1,17 +1,18 @@
-/*package com.webandcloud.Friend;
+package com.socialartnetwork.Friend;
 
-import com.google.cloud.spring.data.datastore.repository.DatastoreRepository;
-import com.webandcloud.User.User;
+import com.socialartnetwork.User.User;
+import org.springframework.cloud.gcp.data.datastore.repository.DatastoreRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
-public interface FriendRepository extends DatastoreRepository<User, Long> {
+@RepositoryRestResource(collectionResourceRel = "friends", path = "friend")
+public interface FriendRepository extends DatastoreRepository<Friend, Long> {
 
-    boolean existsByFirstUserAndSecondUser(User first,User second);
+    boolean existsByFirstUserAndSecondUser(User firstUser,User secondUser);
 
     List<Friend> findByFirstUser(User user);
     List<Friend> findBySecondUser(User user);
 
-}*/
+}

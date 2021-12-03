@@ -37,13 +37,11 @@ public class User {
     @Id
     private Long id;
 
-    private String uid;
+    private String userLastName;
 
-    private String name;
+    private String userFirstName;
 
-    private String email;
-
-    private String picture;
+    private String userEmail;
 
 
     public Long getId() {
@@ -54,37 +52,28 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUserLastName() {
+        return userLastName;
     }
 
-    public void setName(String firstName) {
-        this.name = firstName;
+    public void setUserLastName(String userLastName) {
+        this.userLastName = userLastName;
     }
 
+    public String getUserFirstName() {
+        return userFirstName;
+    }
+
+    public void setUserFirstName(String userFirstName) {
+        this.userFirstName = userFirstName;
+    }
 
     public String getEmail() {
-        return email;
+        return userEmail;
     }
 
     public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPicture() {
-        return picture;
-    }
-
-    public void setPicture(String picture) {
-        this.picture = picture;
-    }
-
-    public String getUid() {
-        return uid;
-    }
-
-    public void setUid(String uid) {
-        this.uid = uid;
+        this.userEmail = email;
     }
 
 }

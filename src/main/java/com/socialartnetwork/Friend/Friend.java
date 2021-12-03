@@ -1,14 +1,21 @@
-/*package com.webandcloud.Friend;
+package com.socialartnetwork.Friend;
 
-import com.webandcloud.User.User;
-import javax.persistence.*;
 import java.util.Date;
+import com.socialartnetwork.User.User;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 
-@Entity
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity(name= "friends")
 public class Friend {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private Date createdDate;
@@ -16,9 +23,6 @@ public class Friend {
     private User firstUser;
 
     private User secondUser;
-
-    public Friend() {
-    }
 
     public Integer getId() {
         return id;
@@ -51,4 +55,4 @@ public class Friend {
     public void setSecondUser(User secondUser) {
         this.secondUser = secondUser;
     }
-}*/
+}

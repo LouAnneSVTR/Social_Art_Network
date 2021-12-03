@@ -1,12 +1,11 @@
 package com.socialartnetwork.config;
 
 //import com.socialartnetwork.User.PrivateEndpoint;
+import com.socialartnetwork.Friend.Friend;
+import com.socialartnetwork.Friend.FriendRepository;
 import com.socialartnetwork.User.User;
 import com.socialartnetwork.User.UserRepository;
-import com.socialartnetwork.entity.Book;
-import com.socialartnetwork.entity.Expense;
-import com.socialartnetwork.repository.BookRepository;
-import com.socialartnetwork.repository.ExpensesRepository;
+import com.socialartnetwork.User.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -19,11 +18,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EntityScan(basePackageClasses = { User.class})
+@EntityScan(basePackageClasses = { User.class, Friend.class})
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableDatastoreAuditing
-@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class})
+@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class, FriendRepository.class})
 public class AutoConfiguration {
 
     @Bean

@@ -34,6 +34,7 @@ import org.springframework.data.annotation.Id;
 @NoArgsConstructor
 @Entity(name = "users")
 public class User {
+
     @Id
     private Long id;
 
@@ -42,7 +43,6 @@ public class User {
     private String userFirstName;
 
     private String userEmail;
-
 
     public Long getId() {
         return id;

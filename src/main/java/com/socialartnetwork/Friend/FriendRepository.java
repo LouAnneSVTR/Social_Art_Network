@@ -1,6 +1,5 @@
 package com.socialartnetwork.Friend;
 
-import com.socialartnetwork.User.User;
 import org.springframework.cloud.gcp.data.datastore.repository.DatastoreRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

@@ -1,20 +1,20 @@
 package com.socialartnetwork.post;
 
-
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
+
 import java.util.Date;
 
 
 @Entity(name = "posts")
-public class Post {
+public class PostImage {
 
     @Id
     private Long id;
 
     private Long userId;
 
-    private String content;
+    private String imageURL;
 
     private Date createdDate;
 
@@ -35,11 +35,11 @@ public class Post {
     }
 
     public String getContent() {
-        return content;
+        return imageURL;
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.imageURL = content;
     }
 
     public Date getCreatedDate() {
@@ -49,4 +49,5 @@ public class Post {
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
     }
+
 }

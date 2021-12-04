@@ -5,6 +5,8 @@ import com.socialartnetwork.Friend.FriendRepository;
 import com.socialartnetwork.User.User;
 import com.socialartnetwork.User.UserRepository;
 import com.socialartnetwork.post.Post;
+import com.socialartnetwork.post.PostImage;
+import com.socialartnetwork.post.PostImageRepository;
 import com.socialartnetwork.post.PostRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -18,11 +20,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EntityScan(basePackageClasses = { User.class, Friend.class, Post.class})
+@EntityScan(basePackageClasses = { User.class, Friend.class, Post.class, PostImage.class})
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableDatastoreAuditing
-@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class, FriendRepository.class, PostRepository.class})
+@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class, FriendRepository.class, PostRepository.class, PostImageRepository.class})
 public class AutoConfiguration {
 
     @Bean

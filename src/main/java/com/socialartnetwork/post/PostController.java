@@ -1,2 +1,4 @@
-package com.socialartnetwork.post;public class PostController {
+package com.socialartnetwork.post;
+
+public class PostController {
 }

@@ -44,9 +44,10 @@ public class User {
     @Column(name = "last_name")
     private String userLastName;
 
-    @Column(name = "firstt_name")
+    @Column(name = "first_name")
     private String userFirstName;
 
+    @Column(name = "user_email")
     private String userEmail;
 
     /*public Long getId() {

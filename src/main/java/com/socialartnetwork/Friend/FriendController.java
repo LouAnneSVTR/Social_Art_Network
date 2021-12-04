@@ -23,7 +23,7 @@ public class FriendController {
 
     private Long lastUserId;
 
-    @GetMapping("/users")
+    @GetMapping("/friend")
     public List<Friend> fetchFriend() {
         return friendRepository.findFriendByIdFirstUser(firstUserId);
     }

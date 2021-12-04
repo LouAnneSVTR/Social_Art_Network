@@ -5,14 +5,17 @@ import java.util.Optional;
 import org.springframework.cloud.gcp.data.datastore.repository.DatastoreRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
 
 
-@RepositoryRestResource(collectionResourceRel = "users", path = "users")
+
+@RepositoryRestResource(collectionResourceRel = "users", path = "user")
 public interface UserRepository extends DatastoreRepository<User, Long> {
 
     List<User> findAll();
 
-    Optional<User> findByEmail(String email);
+    List<User> findUserByUserEmail(String userEmail);
 
     List<User> findUserByUserLastName(String userLastName);
 

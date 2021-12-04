@@ -8,7 +8,7 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "posts", path = "posts")
 public interface PostRepository extends DatastoreRepository<Post, Long> {
 
-    List<Post>  findPostByUserId(User userId);
+    List<Post>  findPostByUserId(Long userId);
 
     List<Post> findALlByOrderByIdDesc();
 

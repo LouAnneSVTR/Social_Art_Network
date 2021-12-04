@@ -11,9 +11,9 @@
       <tbody>
         <tr v-for = "user in users" v-bind:key = "user.id">
           <td> {{user.id}} </td>
+          <td> {{user.userFirstName}} </td>
           <td> {{user.userLastName}} </td>
-          <td> {{user.userLastName}} </td>
-          <td> {{user.email}} </td>
+          <td> {{user.userEmail}} </td>
           
         </tr>
       </tbody>
@@ -34,7 +34,7 @@ import UserService from "../services/UserService";
     },
     methods: {
       getUsers(){
-        UserService.getUsers().then((response) => {
+        UserService.getUsersId("2").then((response) => {
           this.users = response.data;
         });
       }

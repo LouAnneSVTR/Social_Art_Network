@@ -1,21 +1,31 @@
 package com.socialartnetwork.post;
 
 
+import lombok.*;
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
+
+import javax.persistence.Column;
 import java.util.Date;
 
-
+@Getter
+@Setter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity(name = "posts")
 public class Post {
 
     @Id
     private Long id;
 
+    @Column(name = "user_id")
     private Long userId;
 
+    @Column(name = "content")
     private String content;
 
+    @Column(name = "date")
     private Date createdDate;
 
     public Long getId() {

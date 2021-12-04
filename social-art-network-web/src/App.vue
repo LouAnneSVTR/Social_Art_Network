@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <User />
-  </div>
+    <Images />
+  </div>r
 </template>
 
 <script>
 import User from "./components/User";
+import Images from "./components/Images";
 
 export default {
   name: 'App',
   components: {
-    User
+    Images
   }
 }
 </script>

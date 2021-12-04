@@ -5,11 +5,11 @@ import org.springframework.cloud.gcp.data.datastore.repository.DatastoreReposito
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import java.util.List;
 
-@RepositoryRestResource(collectionResourceRel = "postimages", path = "postimages")
+@RepositoryRestResource(collectionResourceRel = "postimages", path = "postimage")
 public interface PostImageRepository extends DatastoreRepository<PostImage, Long> {
 
-    List<Post>  findPostImageByUserId(User userId);
+    List<PostImage> findAll();
 
-    List<Post> findALlImageByOrderByIdDesc();
+    List<PostImage>  findPostImageByUserId(Long userId);
 
 }

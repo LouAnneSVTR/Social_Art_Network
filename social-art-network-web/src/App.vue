@@ -1,10 +1,19 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <User />
   </div>
-  <router-view />
 </template>
+
+<script>
+import User from "./components/User";
+
+export default {
+  name: 'App',
+  components: {
+    User
+  }
+}
+</script>
 
 <style>
 #app {
@@ -15,16 +24,16 @@
   color: #2c3e50;
 }
 
-#nav {
+#app {
   padding: 30px;
 }
 
-#nav a {
+#app a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
+#app a.router-link-exact-active {
   color: #42b983;
 }
 </style>

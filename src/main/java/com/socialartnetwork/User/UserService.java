@@ -1,4 +1,4 @@
-package com.socialartnetwork.User;
+/*package com.socialartnetwork.User;
 
 import com.socialartnetwork.User.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,4 +40,4 @@ public class UserService {
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
-}
+}*/

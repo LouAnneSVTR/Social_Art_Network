@@ -23,12 +23,15 @@ public class User {
 }*/
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
+import javax.persistence.Column;
+
+
+@Getter
+@Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -38,13 +41,15 @@ public class User {
     @Id
     private Long id;
 
+    @Column(name = "last_name")
     private String userLastName;
 
+    @Column(name = "firstt_name")
     private String userFirstName;
 
     private String userEmail;
 
-    public Long getId() {
+    /*public Long getId() {
         return id;
     }
 
@@ -74,6 +79,6 @@ public class User {
 
     public void setEmail(String email) {
         this.userEmail = email;
-    }
+    }*/
 
 }

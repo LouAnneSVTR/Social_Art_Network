@@ -36,7 +36,7 @@ import UserService from "../services/UserService";
     },
     methods: {
       getUsers(){
-        UserService.getUsers().then((response) => {
+        UserService.getUsersId(msg).then((response) => {
           this.users = response.data;
         });
       }

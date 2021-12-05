@@ -25,6 +25,9 @@ public class Post {
     @Column(name = "content")
     private String content;
 
+    @Column(name = "title")
+    private String title;
+
     @Column(name = "date")
     private Date createdDate;
 

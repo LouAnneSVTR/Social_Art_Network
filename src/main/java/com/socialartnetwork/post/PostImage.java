@@ -21,6 +21,9 @@ public class PostImage {
     @Column(name = "user_id")
     private Long userId;
 
+    @Column(name = "title")
+    private String title;
+
     @Column(name = "url")
     private String imageURL;
 

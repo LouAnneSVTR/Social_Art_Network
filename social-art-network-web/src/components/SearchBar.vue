@@ -2,104 +2,48 @@
   <div id="sb">
     <div class="search-bar">
       <input type="text" v-model="search" placeholder="Search title.."/>
-      <label>What are you looking for ?:</label>
-    </div>
-    <div class="wrapper">
-      <div class="card" v-for="post in filteredList">
-        <a v-bind:href="post.link" target="_blank">
-          <img v-bind:src="post.img"/>
-          <small>posted by: {{ post.author }}</small>
-          {{ post.title }}
-        </a>
-      </div>
+      <label>What are you looking for ?</label>
     </div>
   </div>
 </template>
 
 <script>
+
+import UserService from "../services/UserService";
+
 export default {
-  name: "SearchBar"
-}
 
-class Post {
-  constructor(title, link, author, img) {
-    this.title = title;
-    this.link = link;
-    this.author = author;
-    this.img = img;
-  }
-}
+  name: 'Users',
+  data() {
+    return {
+      search: '',
+      postList: [],
+      users: []
 
-const sb = new Vue ({
-  el: '#sb',
-  data: {
-    search: '',
-    postList : [ new Post(
-        'Vue.js',
-        'https://vuejs.org/',
-        'Chris',
-        'https://vuejs.org//images/logo.png'
-    ),
-      new Post(
-          'React.js',
-          'https://facebook.github.io/react/',
-          'Tim',
-          'https://daynin.github.io/clojurescript-presentation/img/react-logo.png'
-      ),
-      new Post(
-          'Angular.js',
-          'https://angularjs.org/',
-          'Sam',
-          'https://angularjs.org/img/ng-logo.png'
-      ),
-      new Post(
-          'Ember.js',
-          'http://emberjs.com/',
-          'Rachel',
-          'http://www.gravatar.com/avatar/0cf15665a9146ba852bf042b0652780a?s=200'
-      ),
-      new Post(
-          'Meteor.js',
-          'https://www.meteor.com/',
-          'Chris',
-          'http://hacktivist.in/introduction-to-nodejs-mongodb-meteor/img/meteor.png'
-      ),
-      new Post(
-          'Aurelia',
-          'http://aurelia.io/',
-          'Tim',
-          'https://cdn.auth0.com/blog/aurelia-logo.png'
-      ),
-      new Post(
-          'Node.js',
-          'https://nodejs.org/en/',
-          'A. A. Ron',
-          'https://code-maven.com/img/node.png'
-      ),
-      new Post(
-          'Pusher',
-          'https://pusher.com/',
-          'Alex',
-          'https://avatars1.githubusercontent.com/u/739550?v=3&s=400'
-      ),
-      new Post(
-          'Feathers.js',
-          'http://feathersjs.com/',
-          'Chuck',
-          'https://cdn.worldvectorlogo.com/logos/feathersjs.svg'
-      ),] },
-  computed: {
+    }
+  },
+  methods: {
+    getUsers(){
+      UserService.getUsers().then((response) => {
+        this.postList = response.data;
+      });
+    },
     filteredList() {
       return this.postList.filter(post => {
-        return post.title.toLowerCase().includes(this.search.toLowerCase())
+        return post.userFirstName.toLowerCase().includes(this.search.toLowerCase())
       })
     }
+  },
+  created() {
+    this.getUsers()
+    this. filteredList()
   }
-})
-  
+}
+
+
 </script>
 
-<style lang="scss">
+<style >
   html, body {
     display: flex;
     align-items: center;
@@ -135,17 +79,17 @@ const sb = new Vue ({
         transition: .15s all ease-in-out;
         background: white;
 
-        &:focus {
+        :focus {
           outline: none;
           transform: scale(1.05);
 
-          & + label {
+           + label {
             font-size: 10px;
             transform: translateY(-24px) translateX(-12px);
           }
 
         }
-        &::-webkit-input-placeholder {
+        ::-webkit-input-placeholder {
           font-size: 12px;
           color: rgba(0, 0, 0, .50);
           font-weight: 100;

@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <Images />
-  </div>r
+    <User/>
+    <SearchBar/>
+  </div>
 </template>
 
 <script>
 import User from "./components/User";
-import Images from "./components/Images";
-
+import SearchBar from "./components/SearchBar";
 export default {
   name: 'App',
   components: {
-    Images
+    User,
+    SearchBar
   }
 }
 </script>

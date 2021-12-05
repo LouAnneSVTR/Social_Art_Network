@@ -1,12 +1,14 @@
 <template>
   <div class="gallery">
       <tr v-for="image in images" v-bind:key = "image.id">
+        <a v-for="user in users" v-bind:key = "user.id">
         <figure>
-          <figcaption>
-            1
+          <figcaption v-if="image.userId === user.id">
+            <p> {{user.userLastName}}</p>
           </figcaption>
-          <img :src=image.imageURL class="gallery__img" alt="">
+          <img :src=image.imageURL class="gallery__img" alt="" v-if="image.userId === user.id">
         </figure>
+        </a>
       </tr>
   </div>
 </template>
@@ -21,7 +23,7 @@ export default {
   data() {
     return {
       images: [],
-      user: []
+      users: []
     }
   },
   methods: {
@@ -30,14 +32,15 @@ export default {
         this.images = response.data;
       });
     },
-    getOneUser(id) {
-      UserService.getUsersId(id).then((response) => {
-        this.user = response.data;
+    getUser() {
+      UserService.getUsers().then((response) => {
+        this.users = response.data;
       });
     }
   },
   created() {
-    this.getImages()
+    this.getImages();
+    this.getUser()
   }
 }
 </script>
@@ -66,7 +69,7 @@ figure {
 }
 figcaption {
   padding: 0.5rem 1rem 0.4rem;
-  background: #ddd;
+  background: #ff8536;
   color: #333;
   border-radius: 1rem 1rem 0 0;
   text-align: end;

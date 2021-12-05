@@ -1,8 +1,8 @@
 <template>
   <div id="sb">
     <div class="search-bar">
-      <input type="text" v-model="search" placeholder="Search title.."/>
-      <label>What are you looking for ?</label>
+      <input type="text" v-model="search" placeholder="Search user.."/>
+      <UserPage userId= "{{ search }}" />
     </div>
   </div>
 </template>
@@ -10,13 +10,17 @@
 <script>
 
 import UserService from "../services/UserService";
+import UserPage from "@/views/UserPage";
 
 export default {
 
   name: 'Users',
+  components: {
+    UserPage
+  },
   data() {
     return {
-      search: '',
+      search: String,
       postList: [],
       users: []
 
@@ -61,6 +65,7 @@ export default {
 
     .search-bar {
       position: relative;
+      border-radius: 30px;
 
       label {
         position: absolute;
@@ -92,7 +97,7 @@ export default {
         ::-webkit-input-placeholder {
           font-size: 12px;
           color: rgba(0, 0, 0, .50);
-          font-weight: 100;
+          font-weight: 300;
         }
 
       }

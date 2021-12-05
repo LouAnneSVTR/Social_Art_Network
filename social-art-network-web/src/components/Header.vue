@@ -6,7 +6,7 @@
     <span style="font-family: Georgia, serif ">
     <a href="#">Social Art Network, Welcome ! </a>
     <a href="#">Home</a>
-    <a href="#">SearchBar</a>
+    <a href="#"><SearchBar /></a>
     <a href="#">Profile</a>
     <a href="#">Logout</a>
     </span>
@@ -15,8 +15,13 @@
 </template>
 
 <script>
+
+import SearchBar from "@/components/SearchBar"
 export default {
-  name: "Header"
+  name: "Header",
+  components: {
+    SearchBar
+  }
 }
 </script>
 
@@ -26,6 +31,7 @@ export default {
   border-radius: 30px;
   position: fixed;
   top: 0;
+  left: 0;
   height: 4rem;
   z-index: 1;
   width: 100%;
@@ -34,9 +40,10 @@ export default {
   float: left;
   color: #6ee16e;
   border-radius: 30px;
-  padding: 14px 16px;
+  padding: 20px 65px;
   text-align: center;
   front-size: 30px;
+  height: 4rem;
   text-decoration: none;
   margin-right: 5px;
 }

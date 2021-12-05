@@ -28,7 +28,7 @@ public class Post {
     @Column(name = "date")
     private Date createdDate;
 
-    public Long getId() {
+    /*public Long getId() {
         return id;
     }
 
@@ -58,5 +58,5 @@ public class Post {
 
     public void setCreatedDate(Date createdDate) {
         this.createdDate = createdDate;
-    }
+    }*/
 }

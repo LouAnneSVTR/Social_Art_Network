@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <User/>
-    <SearchBar/>
+    <Gallery />
   </div>
 </template>
 
 <script>
-import User from "./components/User";
-import SearchBar from "./components/SearchBar";
+import Gallery from "./components/Gallery"
 export default {
   name: 'App',
   components: {
-    User,
-    SearchBar
+    Gallery
   }
 }
 </script>

@@ -24,17 +24,19 @@
 
 <script>
 import UserService from "../services/UserService";
+
   export default {
     name: 'Users',
     data(){
       return {
         users: []
+
       }
 
     },
     methods: {
       getUsers(){
-        UserService.getUsersId("2").then((response) => {
+        UserService.getUsers().then((response) => {
           this.users = response.data;
         });
       }

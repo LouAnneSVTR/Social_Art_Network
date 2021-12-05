@@ -32,7 +32,7 @@ public class Friend {
     @Column(name = "id_second_user")
     private Long idSecondUser;
 
-    public Long getId() {
+    /*public Long getId() {
         return id;
     }
 
@@ -62,5 +62,5 @@ public class Friend {
 
     public void setSecondUser(Long secondUser) {
         this.idSecondUser = secondUser;
-    }
+    }*/
 }

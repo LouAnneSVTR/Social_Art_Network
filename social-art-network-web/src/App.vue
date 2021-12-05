@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <HomePage />
+    <Header />
+    <Gallery />
   </div>
 </template>
 
 <script>
-import HomePage from './views/HomePage'
+import Gallery from "./components/Gallery"
+import Header from "./components/Header";
 export default {
   name: 'App',
   components: {
-    HomePage
+    Header,
+    Gallery
   }
 }
 </script>

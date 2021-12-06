@@ -15,7 +15,6 @@ export default {
   name: 'Users',
   data() {
     return {
-      search: String,
       postList: [],
       users: []
 

@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <Header />
-    <ProfileHeader />
+    <HomePage />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
-import ProfileHeader from "./components/ProfileHeader";
+import HomePage from "./views/HomePage";
 export default {
   name: 'App',
   components: {
     Header,
-    ProfileHeader
+    HomePage
   }
 }
 </script>

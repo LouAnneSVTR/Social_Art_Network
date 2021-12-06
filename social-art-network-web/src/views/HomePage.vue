@@ -1,4 +1,5 @@
 <template>
+
   <div id="homepage">
     <Gallery />
   </div>
@@ -14,6 +15,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
 
 </style>

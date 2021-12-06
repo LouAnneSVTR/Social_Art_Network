@@ -4,9 +4,9 @@
         <a v-for="user in users" v-bind:key = "user.id">
         <figure>
           <figcaption v-if="image.userId === user.id">
-            <p> {{user.userLastName}}</p>
+            <label> {{user.userLastName}}</label>
+            <img :src=image.imageURL class="gallery__img" alt="" v-if="image.userId === user.id">
           </figcaption>
-          <img :src=image.imageURL class="gallery__img" alt="" v-if="image.userId === user.id">
         </figure>
         </a>
       </tr>
@@ -62,16 +62,21 @@ export default {
 img {
   width:650px;
   display: block;
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 figure {
   margin: 0;
 }
 figcaption {
   padding: 0.5rem 1rem 0.4rem;
-  background: #ffc8a8;
+  background: #f3f3f3;
   color: #333;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 1rem 1rem;
   text-align: end;
+  box-shadow: 1rem 1rem 1rem rgba(200, 200, 200,20%);;
+}
+
+label {
+  text-align: left;
 }
 </style>

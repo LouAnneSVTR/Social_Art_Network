@@ -13,35 +13,11 @@ public class Like {
 
     @Id
     @Column(name = "post")
-    private Post post;
+    private Long id;
 
     @Column(name = "user_post")
-    private User UserPost;
+    private Long UserPostId;
 
     @Column(name = "user_like")
-    private User userLike;
-
-    public Post getPost() {
-        return post;
-    }
-
-    public void setPost(Post post) {
-        this.post = post;
-    }
-
-    public User getUserPost() {
-        return UserPost;
-    }
-
-    public void setUserPost(User userPost) {
-        UserPost = userPost;
-    }
-
-    public User getUserLike() {
-        return userLike;
-    }
-
-    public void setUserLike(User userLike) {
-        this.userLike = userLike;
-    }
+    private Long userId;
 }

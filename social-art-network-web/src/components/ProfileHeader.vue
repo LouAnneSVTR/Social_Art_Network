@@ -3,9 +3,10 @@
     <div class="nav">
       <span style="font-family: Helvetica,sans-serif ">
         <img :src=user.photoURL class="gallery__img" alt="">
+        test
         {{user.userFirstName}}
         {{user.userLastName}}
-    </span>
+      </span>
     </div>
   </div>
 </template>
@@ -40,7 +41,6 @@ export default {
   background-color: #ffffff;
   border-radius: 30px;
   position: fixed;
-  top: 0;
   left: 0;
   height: 4rem;
   z-index: 1;

@@ -10,4 +10,6 @@ public interface LikeRepository extends DatastoreRepository<Like, Long> {
 
     List<Like> findAll();
 
+    List<Like> findLikeById(Long id);
+
 }

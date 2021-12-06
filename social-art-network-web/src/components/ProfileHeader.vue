@@ -1,12 +1,16 @@
 <template>
   <div class="container-fluid">
     <div class="nav">
-      <span style="font-family: Helvetica,sans-serif ">
-        <img :src=user.photoURL class="gallery__img" alt="">
-        test
+      <span style="font-family: Helvetica,sans-serif " v-for="user in userS" v-bind:key = "user.id">
+        <img :src=user.photoURL class="gallery__img" alt="" >
+        <div class="name">
         {{user.userFirstName}}
         {{user.userLastName}}
-      </span>
+        </div>
+        <div class="post_button">
+          <input type="button" value="Poster contenu">
+        </div>
+    </span>
     </div>
   </div>
 </template>
@@ -18,15 +22,14 @@ export default {
   name: 'Users',
   data(){
     return {
-      user: []
-
+      userS: []
     }
-
   },
+
   methods: {
     getOneUsers(){
       UserService.getUsersId("2").then((response) => {
-        this.user = response.data;
+        this.userS = response.data;
       });
     }
   },
@@ -40,23 +43,37 @@ export default {
 .nav {
   background-color: #ffffff;
   border-radius: 30px;
-  position: fixed;
-  left: 0;
-  height: 4rem;
-  z-index: 1;
-  width: 100%;
+  height: 10rem;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .gallery__img {
-  width: 20%;
-  height: 20%;
-  object-fit: cover;
+  width: 250px;
+  position: relative;
+  align-items: center;
+  height: 180px;
+  border-radius: 300px;
+  padding: 0.5rem 1rem 0.4rem;
+  background: #ffffff;
+  color: #333;
 }
 
+.name {
+  font-size: 2em;
 
-img {
-  size: 12px;
 }
+
+.post_button {
+  border-radius: 60px;
+  font-size: 1.5em;
+
+}
+
 
 
 </style>

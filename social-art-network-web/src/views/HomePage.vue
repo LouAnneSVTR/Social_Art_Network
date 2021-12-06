@@ -1,21 +1,50 @@
 <template>
+  <div class="app__body">
+    <div class="row">
+      <div class="col-3">
+      </div>
+      <div class="col-6" style="min-height:800px">
+        <posts id="post"/>
+      </div>
 
-  <div id="homepage">
-    <Gallery />
+    </div>
   </div>
 </template>
 
 <script>
-import Gallery from "@/components/Gallery";
+import Posts from "../components/Posts";
+import UserService from "../services/UserService";
+
 export default {
   name: "HomePage",
-  components: {
-    Gallery
+  components: {Posts},
+  data() {
+    return {
+      user : []
+    }
+  },
+  methods: {
+    getOneUser(){
+      UserService.getUsersId("2").then((response) => {
+        this.user = response.data;
+      });
+    }
+  },
+  created() {
+    this.getUsers()
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+.app__body {
+  background-color: #f1f2f5;
+}
+#sidebar{
+  position: absolute;
+}
+#post{
+  position: relative;
+}
 
 </style>

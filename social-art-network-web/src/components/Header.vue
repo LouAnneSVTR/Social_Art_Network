@@ -2,7 +2,7 @@
   <div class="container-fluid">
   <div class="nav">
 
-    <!--img img alt="Art logo" src="../assets/icon_paintbrush.png" class="logo__img" /-->
+    <img img alt="Art logo" src="../assets/icon_paintbrush.png" class="logo__img" >
     <span style="font-family: Helvetica,sans-serif ">
     <a href="#">Social Art Network, Welcome ! </a>
     <a href="#">Home</a>
@@ -50,15 +50,21 @@ export default {
 }
 
 .nav a:hover{
-  background: #a2fa9f;
+  background: #d9ffd8;
   border-radius: 30px;
 
   color:#2c3e50;
 }
 
 .logo__img {
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  position: relative;
+  align-items: center;
+  height: 20px;
+  border-radius: 300px;
+  padding: 0.5rem 1rem 0.4rem;
+  background: #ffffff;
+  color: #333;
 }
 img {
   size: 12px;

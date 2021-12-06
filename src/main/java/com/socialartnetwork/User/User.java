@@ -49,6 +49,9 @@ public class User {
     @Column(name = "user_email")
     private String userEmail;
 
+    @Column(name = "photo")
+    private String photoURL;
+
     /*public Long getId() {
         return id;
     }

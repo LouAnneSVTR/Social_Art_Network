@@ -69,7 +69,7 @@ figure {
 }
 figcaption {
   padding: 0.5rem 1rem 0.4rem;
-  background: #ff8536;
+  background: #ffc8a8;
   color: #333;
   border-radius: 1rem 1rem 0 0;
   text-align: end;

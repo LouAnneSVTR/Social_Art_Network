@@ -3,7 +3,7 @@
   <div class="nav">
 
     <!--img img alt="Art logo" src="../assets/icon_paintbrush.png" class="logo__img" /-->
-    <span style="font-family: Georgia, serif ">
+    <span style="font-family: Helvetica,sans-serif ">
     <a href="#">Social Art Network, Welcome ! </a>
     <a href="#">Home</a>
     <a href="#"><SearchBar /></a>
@@ -16,7 +16,8 @@
 
 <script>
 
-import SearchBar from "@/components/SearchBar"
+import SearchBar from "./SearchBar";
+
 export default {
   name: "Header",
   components: {

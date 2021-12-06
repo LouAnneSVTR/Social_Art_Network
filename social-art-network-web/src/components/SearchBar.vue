@@ -2,7 +2,6 @@
   <div id="sb">
     <div class="search-bar">
       <input type="text" v-model="search" placeholder="Search user.."/>
-      <UserPage userId= "{{ search }}" />
     </div>
   </div>
 </template>
@@ -10,14 +9,11 @@
 <script>
 
 import UserService from "../services/UserService";
-import UserPage from "@/views/UserPage";
 
 export default {
 
   name: 'Users',
-  components: {
-    UserPage
-  },
+
   data() {
     return {
       search: String,

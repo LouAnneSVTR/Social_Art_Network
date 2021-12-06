@@ -32,35 +32,5 @@ public class Friend {
     @Column(name = "id_second_user")
     private Long idSecondUser;
 
-    /*public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Date getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public Long getFirstUser() {
-        return this.idFirstUser;
-    }
-
-    public void setFirstUser(Long firstUser) {
-        this.idFirstUser = firstUser;
-    }
-
-    public Long getSecondUser() {
-        return this.idSecondUser;
-    }
-
-    public void setSecondUser(Long secondUser) {
-        this.idSecondUser = secondUser;
-    }*/
 }

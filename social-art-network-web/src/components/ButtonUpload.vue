@@ -17,8 +17,8 @@ export default {
       alert(imageURL2)
     }
   }
-})
 }
+
 </script>
 
 <style scoped>

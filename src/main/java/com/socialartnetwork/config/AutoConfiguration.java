@@ -20,11 +20,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EntityScan(basePackageClasses = { User.class, Friend.class, Post.class, PostImage.class, Like.class})
+@EntityScan(basePackageClasses = { User.class, Friend.class, PostImage.class, Like.class})
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableDatastoreAuditing
-@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class, FriendRepository.class, PostRepository.class, PostImageRepository.class, LikeRepository.class})
+@EnableDatastoreRepositories(basePackageClasses = {UserRepository.class, FriendRepository.class, PostImageRepository.class, LikeRepository.class})
 public class AutoConfiguration {
 
     @Bean

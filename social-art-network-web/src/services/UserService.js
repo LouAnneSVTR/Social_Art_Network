@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const USER_API_BASE_URL = 'http://localhost:8081/api/users'
+const USER_API_BASE_URL = 'https://social-art-network.ew.r.appspot.com/api/users'
 
 class UserService {
     getUsers() {

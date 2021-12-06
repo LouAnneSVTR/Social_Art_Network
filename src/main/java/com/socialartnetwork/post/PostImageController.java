@@ -2,10 +2,7 @@ package com.socialartnetwork.post;
 
 import com.socialartnetwork.User.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,5 +17,10 @@ public class PostImageController {
     @GetMapping("/postimages")
     public List<PostImage> fetchImages() {
         return this.postImageRepository.findAll();
+    }
+
+    @PostMapping("/postimages")
+    public PostImage save(@RequestBody PostImage image) {
+        return postImageRepository.save(image);
     }
 }

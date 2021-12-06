@@ -12,4 +12,6 @@ public interface PostImageRepository extends DatastoreRepository<PostImage, Long
 
     List<PostImage>  findPostImageByUserId(Long userId);
 
+    PostImage save(PostImage image);
+
 }

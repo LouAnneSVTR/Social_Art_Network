@@ -1,8 +1,6 @@
 package com.socialartnetwork.like;
 
 
-import com.socialartnetwork.User.User;
-import com.socialartnetwork.post.Post;
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 

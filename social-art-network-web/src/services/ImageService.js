@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const IMAGE_API_BASE_URL = 'http://localhost:8081/api/postimages'
+const IMAGE_API_BASE_URL = 'https://social-art-network.ew.r.appspot.com/api/postimages'
 
 class ImageService {
     getImages() {

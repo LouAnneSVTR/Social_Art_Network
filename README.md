@@ -27,11 +27,12 @@ Tous le long du projet, nous avons utilisé Swagger2 afin de réaliser des requ�
 
 https://social-art-network.ew.r.appspot.com/swagger-ui/
 
-### Problème autentification OAuth2
+### Problème authentication OAuth2
 
 Nous avons commencé à utiliser l'authentification Springboot security avec OAuth2 de Google Cloud Platform, nous avons réussi à implémenter la connexion par Google, mais cela nous empêchait de réaliser des requetes GET ou Post sur notre base, car nous n'avons pas réussi à donner les droits d'accès à nos comptes Google.
 
-Front
-sudo npm -g install @vue/cli //onstaller vue cli
-vue create social-art_network-web //créer projet vue
-npm run serve //run server vue
+#TODO ajouter image swagger2 erreur 403
+
+## Front avec Vue.js
+Nous avons utilisé le framework Vue3js afin de réaliser le front de notre application. Nous avons réussi à utiliser les requêtes GET de nos bases dans le datastore afin d'afficher nos images et l'utilisateur qui l'a posté. Mais nous n'avons pas réussi à utiliser la requête POST afin d'ajouter des entités dans notre datastore (par exemple de nouvelle image ou de nouveaux utilisateurs) 
+

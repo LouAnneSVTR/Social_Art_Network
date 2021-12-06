@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "social-art-network",
-  "private_key_id": "a7367ccaee0f7a6f8be1d440d3302cdf8fef912f",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCk95NWcWCU7uEB\n8zFSJFtVS4SGQRVsK+TBIyoF2vg16DqRwlBNTuxhr2wRe66pPl2K6kWc5fQ+0k19\nOny6aYWR0QQDduiTqhO8B6vZkr1oMvOyfKhfQC7cnTKUSZstxAoKRTHfXwo8m3Kc\nGd5ok5Z+bZmJunYuSdL1orfDcfjEJdp/mWFUj2EIj0AHmO3gj3VgCQay5lMzKfwi\nPZE6D0On6vhuL+FEx9TPeIGkelpCzj3hKpyCiF3z3kI8yXoF4lce6rA7U0Y+zqon\nYk71nU/Nkvqy+sVZ29ofeB7kdeiZPplPILq3F76ibUwGzjWhk+cK3n16hTYritmz\nUYVvByypAgMBAAECggEAEv4GVlrH+umMGeJ+5IU3RykCNUcvsVQV2mcDHui0cBdg\nC9kuT9I07HOq6lHeHFHH6Pb7A/rk/WkOnwrhYoBEzpJ85u21DdAURM7wyeQnHoSU\nMjHAHDQ6WO+Xq8MUJKcX3VIVUXFCj1L5tU9Un99TAZP6a+T912ssKJe+1pdr46AF\nNDj1Iro9VbshRYu0q7edeUcouUQf6TG6xCQuPVsjKrwmdN1SAyt9JMyO+f4InWys\nI1uFr6oS8Z15dXc1+M1Dr/qCQ4FdVP+mxNI/PQvg+y9kybn3H7MfmOBOFrmbb6Ig\nUFi7le26xTTMRkAoVvVdgP14r4+tn0Uuze5+kSbBkQKBgQDSjNmvp2o269iYjINw\n9TaAjMIKyeVqi5tOFTL8nUyVAaqcbZm7eMfxcV+A31QWjLGKAcEr+qll3VO7+wdX\n+CwcsyOxbdM07UHyPl/Zo9jyDqzCWsSRqaWD6fx/v5lR1qWgXmDVB9JhK9q7VgXy\n1p31HNWJufAwZKG4SuomuiZhcQKBgQDIk8VyFAoos2tv9mIl2vrL3i9spHetGipX\nAo4FoiwPr99OkfAyFoq9wGRkjvJ+TvqUmPK+y3l7s5KKvNBSYHUFWgwB77wV3qUQ\n9VI08h3e1wGItL64mbAGxa9uxuNcXTTe0NzxYWjkBAvkdLIrgUW0kuOnXSPovVYm\npEqZGRXiuQKBgBesoLmAgI/mWvdkLU9hMxynNxZRd0tQoUjZV19SLI9AnbdzF2sd\n/JVoYw2xjtnuPfQ/mEHisHN0vHqRklTQ4dzkQ6oqqCn2V4jufIaTRsyI2+IKpLmg\nMq0vfSW8HHg4Q21Rz1+EvqIQdUrFNGwGt8Ic2OHgl2JJnmmDeuqZ2cDxAoGACHck\nKDJsU1dvO2R8s/hQCXaxLbarTmUCUHXNJLO5hFf55skGCDcnV+bc1dmqpmYS8V6b\nMC5KTExB7RUW/cMQbU9lnldN6uZgtRyFgbKOTC9q4ygtvIDQCxkg1F4Ujntoldbe\n3FkuIiGBlvzN4EQuevaQISovL81961eXxmpmoBECgYAZ3T8ZGX30Qz6x3BdE/S9R\n/gcON0G8LQTa6QdKrA2AUX52lCmFVAOueQfeAeZzy+cMfR034ibhZpd/OJt+MNv5\ncIpx6j3kxbuZMxPB92peqaZKGn/XiUXzVZ2whkAHUFcIzzGEp2BnlLFTrIIF2Eba\n4TOfvVwaRt8WhHQE+fofRA==\n-----END PRIVATE KEY-----\n",
-  "client_email": "social-art-network-storage@social-art-network.iam.gserviceaccount.com",
-  "client_id": "116245241640359529209",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/social-art-network-storage%40social-art-network.iam.gserviceaccount.com"
-}
+

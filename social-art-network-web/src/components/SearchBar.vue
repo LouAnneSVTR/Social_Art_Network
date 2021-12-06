@@ -13,7 +13,6 @@ import UserService from "../services/UserService";
 export default {
 
   name: 'Users',
-
   data() {
     return {
       search: String,

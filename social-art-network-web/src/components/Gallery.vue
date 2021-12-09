@@ -4,7 +4,10 @@
         <a v-for="user in users" v-bind:key = "user.id">
         <figure>
           <figcaption v-if="image.userId === user.id">
+            <div class="User_name">
             <label> {{user.userLastName}}</label>
+            </div>
+             <LikeIco/>
             <img :src=image.imageURL class="gallery__img" alt="" v-if="image.userId === user.id">
           </figcaption>
         </figure>
@@ -16,9 +19,13 @@
 <script>
 import ImageService from "../services/ImageService";
 import UserService from "../services/UserService";
+import LikeIco from "../components/LikeIco"
 
 export default {
   name: "Gallery",
+  components: {
+    LikeIco
+  },
 
   data() {
     return {
@@ -79,4 +86,5 @@ figcaption {
 label {
   text-align: left;
 }
+
 </style>

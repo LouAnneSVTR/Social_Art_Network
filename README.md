@@ -68,3 +68,12 @@ De plus, nous n'avons pas pu utiliser ces classes dans notre front ce qui rend n
 
 ### Conclusion
 Travail mitigé, non terminé, nous regrettons de n'avoir que ce rendu a présenter. 
+###POST image
+Le post d'image fonctinne via swagger, comme montré dans la capture du profile, un utilisateur créer (toujours via swagger peut poser). Cependant, nous n'avons pas pu venir a bout du POST via Vue
+
+###Like et follow
+Les classes sont implémenté dans le backend Springboot mais incomplète. Pour les Like, il faudrait utiliser les bucket de google otament pour que cela scale.
+De plus, nous n'avons pas pu utiliser ces classes dans notre front ce qui rend notre travail très incomplet.
+
+### Conclusion
+Travail mitigé, non terminé, nous regrettons de n'avoir que ce rendu a présenter. 

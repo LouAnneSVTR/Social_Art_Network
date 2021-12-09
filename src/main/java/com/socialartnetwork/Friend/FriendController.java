@@ -16,15 +16,6 @@ import java.util.List;
 @CrossOrigin("http://localhost:8080/")
 public class FriendController {
 
-    @Autowired
-    private FriendRepository friendRepository;
-
-    private Long firstUserId;
-
-    private Long lastUserId;
-
-    @GetMapping("/friend")
-    public List<Friend> fetchFriend() {
-        return friendRepository.findFriendByIdFirstUser(firstUserId);
-    }
+    /*@Autowired
+    private FriendRepository friendRepository;*/
 }

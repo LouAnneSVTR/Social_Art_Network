@@ -23,4 +23,6 @@ public class LikeController {
         return likeRepository.findAll();
     }
 
+    //TODO : implémentation des buckets, gestion avec google
+
 }
